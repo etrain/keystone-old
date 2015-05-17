@@ -6,10 +6,10 @@ import org.scalatest.FunSuite
 import pipelines.{Logging, Transformer}
 import utils.PipelinePersistence._
 
-class A extends Transformer[Int,Int] with Serializable {
+class A extends Transformer[Int,Int] {
   def apply(a: Int): Int = a + 5
 }
-class B extends Transformer[Int, String] with Serializable {
+class B extends Transformer[Int, String] {
   def apply(a: Int): String = a.toString + "yeah"
 }
 
