@@ -5,8 +5,8 @@ import breeze.numerics._
 import evaluation.MulticlassClassifierEvaluator
 import loaders.CifarLoader
 import nodes.images._
-import nodes.learning.{BlockLeastSquaresEstimator, LinearMapEstimator, ZCAWhitener, ZCAWhitenerEstimator}
-import nodes.stats.{StandardScaler, Sampler}
+import nodes.learning.{BlockLeastSquaresEstimator, ZCAWhitener, ZCAWhitenerEstimator}
+import nodes.stats.{Sampler, StandardScaler}
 import nodes.util.{Cacher, ClassLabelIndicatorsFromIntLabels, MaxClassifier}
 import org.apache.spark.{SparkConf, SparkContext}
 import pipelines.Logging
